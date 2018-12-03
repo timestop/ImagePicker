@@ -236,9 +236,9 @@ open class ImagePickerController: UIViewController {
       object: nil)
     
     NotificationCenter.default.addObserver(self,
-                                           selector: #selector(dismissIfNeeded),
-                                           name: NSNotification.Name(rawValue: ImageStack.Notifications.imageDidDrop),
-                                           object: nil)
+      selector: #selector(dismissIfNeeded),
+      name: NSNotification.Name(rawValue: ImageStack.Notifications.imageDidPush),
+      object: nil)
 
     NotificationCenter.default.addObserver(self,
       selector: #selector(didReloadAssets(_:)),
